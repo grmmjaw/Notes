@@ -1,0 +1,20 @@
+body{
+background-color: red;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.noteArea{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 100px;
+}
+.noteMetadata{
+    background-color: gray;
+    padding: 2px;
+}
+.noteBody{
+    background-color: aqua;
+    padding: 2px;
+}
