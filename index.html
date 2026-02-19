@@ -13,14 +13,17 @@
         <div class="noteMetadata">   
             <div class="dateContainer">date x time recorded </div>
             <div class = "buttonContainer"> 
-        <button>V</button> 
-        <button>X</button>
+        <button class="addButton" onclick="addNewNote()">Add</button> 
+        <button class="closeButton" onclick="closeNote()">Close</button>
     </div>   
        
    
         </div>
-        <div class="noteBody">
-            <input type="text">
+        <div class="noteContent">
+            <textarea name="" id="textHeader" rows="2" style="overflow: hidden;"></textarea>
+        <textarea name="pageText" id="textContent" cols="30" rows="20">
+    
+        </textarea>
         </div>
     </div></div>
 </body>

@@ -1,5 +1,5 @@
 html,body{
-background-color: red; 
+background-color: rgb(111, 129, 104); 
 margin: 0px;
 height: 100%;
 
@@ -40,20 +40,30 @@ align-items: center;
 .dateContainer{
     width: 100%;
 }
-.noteBody{
+.noteContent{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 7px;
+    
 }
-.input{
+#textContent,#textHeader{
+   background-color: #ffffff;
+   resize: none;
    border: none;
+   border-radius: 12px;
+}#textContent{
+  
+}
+#textHeader{
+text-align: center;
 }
 button{
-    border-radius: 10px;
+     border-radius: 12px;
     border: none;
-    background-color: blueviolet;
-    
+    background-color: rgb(8, 122, 35);
+
 }
