@@ -55,11 +55,22 @@ align-items: center;
    resize: none;
    border: none;
    border-radius: 12px;
-}#textContent{
-  
-}
+   font-size:32;}
+#textContent{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  width: 200px;
+  height: 300px;
+  }
 #textHeader{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 19px;
+font-weight: bold;
 text-align: center;
+justify-items: center;
+width: 200px;
+  height: 30px;
 }
 button{
      border-radius: 12px;
