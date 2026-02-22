@@ -1,10 +1,10 @@
 html,body{
-background-color: rgb(111, 129, 104); 
+background-color: rgb(210, 135, 160); 
 margin: 0px;
 height: 100%;
 
 }
-.container{
+#container{
     display: flex;
    flex-direction: column;
    height: 100%;
@@ -12,24 +12,24 @@ height: 100%;
 justify-content: center;
 align-items: center;
 }
-.noteArea{
+#noteArea{
     display: flex;
     flex-direction: column;
     height: 400px;
     width: 300px;
-    background-color: rgb(255, 230, 130);
+    background-color: 	#ffd6e3;
     
     
     border-radius: 12px;
 }
-.noteMetadata{
-    background-color: rgb(222, 222, 222);
+#noteMetadata{
+    background-color: 	#d2cfcf;
      border-top-left-radius: 12px;
      border-top-right-radius: 12px ;
      display: flex;
      flex-direction: row;    
 }
-.buttonContainer{
+#buttonContainer{
     width: 100%;
     height: 100%;
     display: flex;
@@ -37,10 +37,10 @@ align-items: center;
     justify-content: flex-end;
     gap: 10px;
 }
-.dateContainer{
+#dateContainer{
     width: 100%;
 }
-.noteContent{
+#noteContent{
     width: 100%;
     height: 100%;
     display: flex;
@@ -51,7 +51,7 @@ align-items: center;
     
 }
 #textContent,#textHeader{
-   background-color: #ffffff;
+   background-color:#ffedf8;
    resize: none;
    border: none;
    border-radius: 12px;
@@ -68,13 +68,24 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 19px;
 font-weight: bold;
 text-align: center;
-justify-items: center;
+justify-content: center;
 width: 200px;
   height: 30px;
+  padding-top: 13px;
 }
 button{
      border-radius: 12px;
-    border: none;
-    background-color: rgb(8, 122, 35);
-
+    border: none; 
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
+#addButton{
+    background-color: rgb(139, 206, 176);
+}#addButton:active{
+    background-color: rgb(104, 159, 134);}
+
+#closeButton{
+    background-color: rgb(255, 122, 122);
+
+}#closeButton:active{
+        background-color: rgb(186, 89, 89);}

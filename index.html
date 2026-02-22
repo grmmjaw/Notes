@@ -6,26 +6,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Notes</title>
 </head>
-<body>
-    <div class="container">
-    <div class="noteArea">
-        <div class = "top"></div>
-        <div class="noteMetadata">   
-            <div class="dateContainer"></div>
-            <div class = "buttonContainer"> 
-        <button class="addButton" onclick="addNewNote()">Add</button> 
-        <button class="closeButton" onclick="closeNote()">Close</button>
+<body>       <button>ADD NOTE</button>
+    <div id ="container">
+ 
+    <div id="noteArea">
+        <div id = "top"></div>
+        <div id ="noteMetadata">   
+            <div id ="dateContainer"></div>
+            <div id = "buttonContainer"> 
+        <button id ="addButton">Add</button> 
+        <button id ="closeButton">Close</button>
     </div>   
        
    
         </div>
-        <div class="noteContent">
+        <div id ="noteContent">
             <textarea name="" id="textHeader" rows="2" spellcheck="false" style="overflow: hidden; "></textarea>
-        <textarea name="pageText" id="textContent" cols="30" rows="20"style="overflow: hidden;>
+        <textarea name="pageText" id="textContent"  cols="30" rows="20"style="overflow: hidden;">
     
         </textarea>
         </div>
     </div></div>
 </body>
-<script src="app.js"></script>
+<script src= "app.js"></script>
 </html>
