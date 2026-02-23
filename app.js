@@ -1,14 +1,19 @@
-const container = document.getElementById("container");
-const dateContainer = document.getElementById("dateContainer");
-const addBtn = document.getElementById("addButton");
-const closeBtn = document.getElementById("closeButton");
-const note = document.getElementById("noteContent");
+const container = document.querySelector("#container");
+const dateContainer = document.querySelector("#dateContainer");
+const addBtn = document.querySelector("#addButton");
+const closeBtn = document.querySelector("#closeButton");
+const note = document.querySelector("#noteContent");
+const noteArea = document.querySelector("#noteArea");
+
 
 addBtn.addEventListener("click", addNewNote);
 closeBtn.addEventListener("click", closeNote)
 
 function addNewNote(){
-    console.log("newNote");
+   const newNote = document.createElement("div") 
+   console.log ("newnote");
+   newNote.cla
+   document.body.appendChild(newNote)
 };
 function closeNote(){
 
