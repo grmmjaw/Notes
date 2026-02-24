@@ -1,4 +1,4 @@
-const container = document.querySelector("#container");
+const container = document.getElementById("container");
 const dateContainer = document.querySelector("#dateContainer");
 const addBtn = document.querySelector("#addButton");
 const closeBtn = document.querySelector("#closeButton");
@@ -10,11 +10,13 @@ addBtn.addEventListener("click", addNewNote);
 closeBtn.addEventListener("click", closeNote)
 
 function addNewNote(){
-   const newNote = document.createElement("div") 
+   const newNote = document.createElement("div"); 
    console.log ("newnote");
-   newNote.cla
-   document.body.appendChild(newNote)
+   newNote.classList.add("newNoter");
+   container.appendChild(newNote)
 };
 function closeNote(){
 
 }
+// two ways to go about this, create a one by one for the class lists and get a function to make it all load up 
+// redesign note architectire 

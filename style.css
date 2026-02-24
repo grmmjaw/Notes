@@ -1,7 +1,8 @@
 html,body{
 background-color: rgb(210, 135, 160); 
 margin: 0px;
-height: 100%;
+
+
 
 }
 #container{
@@ -89,3 +90,13 @@ button{
 
 }#closeButton:active{
         background-color: rgb(186, 89, 89);}
+        .newNoter{
+             display: flex;
+             flex-wrap: wrap;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: 	#ffd6e3;
+    margin: 10px;
+    border-radius: 12px;
+        }
