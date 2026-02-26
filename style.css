@@ -1,5 +1,5 @@
 html,body{
-background-color: rgb(210, 135, 160); 
+background-color: #516450; 
 margin: 0px;
 
 
@@ -18,7 +18,7 @@ align-items: center;
     flex-direction: column;
     height: 400px;
     width: 300px;
-    background-color: 	#ffd6e3;
+    background-color: #abc2aa;
     
     
     border-radius: 12px;
@@ -51,20 +51,26 @@ align-items: center;
     gap: 7px;
     
 }
-#textContent,#textHeader{
+.textContent,.textHeader{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
    background-color:#ffedf8;
    resize: none;
    border: none;
    border-radius: 12px;
    font-size:32;}
-#textContent{
+
+.textContent{
+    margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
   width: 200px;
   height: 300px;
   }
-#textHeader{
+.textHeader{
+    margin-top: 15px;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 19px;
 font-weight: bold;
@@ -90,13 +96,24 @@ button{
 
 }#closeButton:active{
         background-color: rgb(186, 89, 89);}
+        
         .newNoter{
              display: flex;
              flex-wrap: wrap;
     flex-direction: column;
     height: 400px;
     width: 300px;
-    background-color: 	#ffd6e3;
+    background-color:#abc2aa;
     margin: 10px;
     border-radius: 12px;
         }
+        
+    .infoMetaData{
+        background-color: 	#d2cfcf;
+     border-top-left-radius: 12px;
+     border-top-right-radius: 12px ;
+     display: flex;
+     flex-direction: row; 
+     height: 20px;
+     width: 300px;
+    }

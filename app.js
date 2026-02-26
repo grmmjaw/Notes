@@ -10,10 +10,22 @@ addBtn.addEventListener("click", addNewNote);
 closeBtn.addEventListener("click", closeNote)
 
 function addNewNote(){
-   const newNote = document.createElement("div"); 
-   console.log ("newnote");
+   const newNote = document.createElement("div");
+   const infoBar = document.createElement("div");
+   const title = document.createElement("textarea");
+   const textContent = document.createElement("textarea")
    newNote.classList.add("newNoter");
-   container.appendChild(newNote)
+   container.appendChild(newNote);
+
+   newNote.appendChild(infoBar);
+   infoBar.classList.add("infoMetaData");
+
+   newNote.appendChild(title);
+   title.classList.add("textHeader");
+
+   newNote.appendChild(textContent);
+   textContent.classList.add("textContent");
+
 };
 function closeNote(){
 
