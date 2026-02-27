@@ -32,18 +32,21 @@ function addNewNote(){
 
    infoBar.appendChild(buttonContainer);
    buttonContainer.classList.add("buttonContainer");
-
-
+   
    buttonContainer.appendChild(closeButton);
    closeButton.classList.add("closeButton")
    closeButton.textContent = "close";
    buttonContainer.appendChild(newButton);
+
+   closeButton.addEventListener("click", closeNote)
+  
    newButton.classList.add("addButton");
    newButton.textContent = "add";
    newButton.addEventListener("click",addNewNote);
-};
+
 function closeNote(){
+   newNote.remove()
    
-}
+}};
 // two ways to go about this, create a one by one for the class lists and get a function to make it all load up 
 // redesign note architectire 
