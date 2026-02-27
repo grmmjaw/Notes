@@ -30,7 +30,7 @@ align-items: center;
      display: flex;
      flex-direction: row;    
 }
-#buttonContainer{
+.buttonContainer{
     width: 100%;
     height: 100%;
     display: flex;
@@ -90,11 +90,16 @@ button{
     background-color: rgb(139, 206, 176);
 }#addButton:active{
     background-color: rgb(104, 159, 134);}
+    .addButton{
+    background-color: rgb(139, 206, 176);
+}.addButton:active{
+    background-color: rgb(104, 159, 134);}
+    
 
-#closeButton{
+.closeButton{
     background-color: rgb(255, 122, 122);
 
-}#closeButton:active{
+}.closeButton:active{
         background-color: rgb(186, 89, 89);}
         
         .newNoter{
