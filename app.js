@@ -6,7 +6,7 @@ const noteArea = document.querySelector("#noteArea");
 
 
 addBtn.addEventListener("click", addNewNote);
-closeBtn.addEventListener("click", closeNote)
+closeBtn.addEventListener("click", closeNote);
 
 function addNewNote(){
    const newNote = document.createElement("div");
@@ -16,13 +16,14 @@ function addNewNote(){
    const newButton = document.createElement("button");
    const buttonContainer = document.createElement("div");
    const textContent = document.createElement("textarea");
-   const texts = document.createElement("p")
+   const dateContainer = document.createElement("div")
    newNote.classList.add("newNoter");
    container.appendChild(newNote);
 
    newNote.appendChild(infoBar);
    infoBar.classList.add("infoMetaData");
-   
+   infoBar.appendChild(dateContainer);
+   dateContainer.textContent = "stuff"
 
    newNote.appendChild(title);
    title.classList.add("textHeader");
@@ -33,6 +34,7 @@ function addNewNote(){
    infoBar.appendChild(buttonContainer);
    buttonContainer.classList.add("buttonContainer");
    
+
    buttonContainer.appendChild(closeButton);
    closeButton.classList.add("closeButton")
    closeButton.textContent = "close";
@@ -43,6 +45,9 @@ function addNewNote(){
    newButton.classList.add("addButton");
    newButton.textContent = "add";
    newButton.addEventListener("click",addNewNote);
+
+   
+
 
 function closeNote(){
    newNote.remove()
