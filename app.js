@@ -27,7 +27,9 @@ function addNewNote(){
    newNote.appendChild(infoBar);
    infoBar.classList.add("infoMetaData");
    infoBar.appendChild(dateContainer);
+   dateContainer.classList.add("dateContainer")
    dateContainer.textContent = fulldate;
+   
    infoBar.appendChild(buttonContainer);
    buttonContainer.classList.add("buttonContainer");
 
@@ -75,7 +77,7 @@ const minutes = date.getMinutes();
 const month = date.getUTCMonth() + 1;
 const year = date.getFullYear(); 
 
-var fulldate = day + "-" + month + "-"+ year + " " + hours + ":" + minutes;
+var fulldate = day + "-" + month + "-"+ year + " " + "@ "+ hours + ":" + minutes;
 
 
 if(10 > minutes)(
