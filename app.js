@@ -5,7 +5,7 @@ const note = document.querySelector("#noteContent");
 const noteArea = document.querySelector("#noteArea");
 
 
-addBtn.addEventListener("click", addNewNote);
+addBtn.addEventListener("click", addNewNote, getTime,setInterval);
 
 
 function addNewNote(){
@@ -28,7 +28,7 @@ function addNewNote(){
    infoBar.classList.add("infoMetaData");
    infoBar.appendChild(dateContainer);
    dateContainer.classList.add("dateContainer")
-   dateContainer.textContent = fulldate;
+   dateContainer.textContent = getTime();
    
    infoBar.appendChild(buttonContainer);
    buttonContainer.classList.add("buttonContainer");
@@ -66,24 +66,26 @@ function addNewNote(){
 
 function closeNote(){
    newNote.remove()
-
-   
 }};
 
+function getTime(){
 const date = new Date();
 const day = date.getDate();
 const hours = date.getHours();
 const minutes = date.getMinutes();
 const month = date.getUTCMonth() + 1;
 const year = date.getFullYear(); 
-
-var fulldate = day + "-" + month + "-"+ year + " " + "@ "+ hours + ":" + minutes;
-
+var fulldate = day + "-" + month + "-"+ year + " " + "@"+ hours + ":" + minutes ;
 
 if(10 > minutes)(
-
 fulldate = day + "-" + month + "-"+ year + " " + hours + ":" + "0" + minutes
-); 
+);  
+return fulldate;
+} 
+
+setInterval(getTime,1000)
+
+
 
 
 
