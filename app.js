@@ -6,14 +6,18 @@ const noteArea = document.querySelector("#noteArea");
 
 
 addBtn.addEventListener("click", addNewNote);
-closeBtn.addEventListener("click", closeNote);
+
 
 function addNewNote(){
    const newNote = document.createElement("div");
+   newNote.textContent = ' ';
    const infoBar = document.createElement("div");
    const title = document.createElement("textarea");
+   title.textContent = ' '
+   title.classList.add("title")
    const closeButton = document.createElement("button");
    const newButton = document.createElement("button");
+   const saveButton = document.createElement("button")
    const buttonContainer = document.createElement("div");
    const textContent = document.createElement("textarea");
    const dateContainer = document.createElement("div")
@@ -23,17 +27,20 @@ function addNewNote(){
    newNote.appendChild(infoBar);
    infoBar.classList.add("infoMetaData");
    infoBar.appendChild(dateContainer);
-   dateContainer.textContent = "stuff"
-
-   newNote.appendChild(title);
-   title.classList.add("textHeader");
-
-   newNote.appendChild(textContent);
-   textContent.classList.add("textContent");
-
+   dateContainer.textContent = fulldate;
    infoBar.appendChild(buttonContainer);
    buttonContainer.classList.add("buttonContainer");
-   
+
+
+    buttonContainer.appendChild(saveButton);
+   saveButton.classList.add("saveButton");
+   saveButton.textContent = "save";
+
+
+
+   newButton.classList.add("addButton");
+   newButton.textContent = "add";
+   newButton.addEventListener("click",addNewNote);
 
    buttonContainer.appendChild(closeButton);
    closeButton.classList.add("closeButton")
@@ -42,16 +49,42 @@ function addNewNote(){
 
    closeButton.addEventListener("click", closeNote)
   
-   newButton.classList.add("addButton");
-   newButton.textContent = "add";
-   newButton.addEventListener("click",addNewNote);
+
+   
+   
+ 
+   newNote.appendChild(title);
+   title.classList.add("textHeader");
+
+   newNote.appendChild(textContent);
+   textContent.classList.add("textContent");
 
    
 
 
 function closeNote(){
    newNote.remove()
+
    
 }};
-// two ways to go about this, create a one by one for the class lists and get a function to make it all load up 
-// redesign note architectire 
+
+const date = new Date();
+const day = date.getDate();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const month = date.getUTCMonth() + 1;
+const year = date.getFullYear(); 
+
+var fulldate = day + "-" + month + "-"+ year + " " + hours + ":" + minutes;
+
+
+if(10 > minutes)(
+
+fulldate = day + "-" + month + "-"+ year + " " + hours + ":" + "0" + minutes
+); 
+
+
+
+
+
+
